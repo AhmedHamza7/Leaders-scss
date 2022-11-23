@@ -1,0 +1,50 @@
+@font-face {
+  font-family: font-regular;
+  src: url("fonts/Ubuntu-Regular.ttf");
+}
+@font-face {
+  font-family: font-bold;
+  src: url("fonts/Ubuntu-Bold.ttf");
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: font-regular;
+}
+
+nav .nav-header {
+  padding-block: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+nav .nav-header .nav-logo {
+  display: flex;
+  align-items: center;
+}
+nav .nav-header .nav-logo .logo-text {
+  margin-left: 15px;
+  color: #D90048;
+  font-size: 20px;
+  font-family: font-bold !important;
+}
+nav .nav-header .nav-logo .logo-text span {
+  font-family: font-bold !important;
+  margin-block: 5px;
+  color: #0054BE;
+  font-size: 24px;
+  letter-spacing: 5px;
+}
+nav .nav-header .nav-contact div {
+  display: flex;
+  align-items: center;
+}
+nav .nav-header .nav-contact div i {
+  color: #0054BE;
+  margin-inline: 5px;
+}/*# sourceMappingURL=main.css.map */

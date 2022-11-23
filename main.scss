@@ -1,0 +1,58 @@
+@use 'css/colors' as *;
+@use 'css/mixins' as * ;
+
+@font-face {
+    font-family: font-regular;
+    src: url('fonts/Ubuntu-Regular.ttf');
+}
+
+@font-face {
+    font-family: font-bold;
+    src: url("fonts/Ubuntu-Bold.ttf");
+}
+.container {
+    @include container
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: font-regular;
+}
+nav {
+    .nav-header {
+        padding-block: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        .nav-logo{
+            display: flex;
+            align-items: center;
+
+            .logo-text {
+                margin-left: 15px;
+                color: $red-color;
+                font-size: 20px;
+                font-family: font-bold !important;
+                span {
+                    font-family: font-bold !important;
+                    margin-block: 5px;
+                    color: $blue-color;
+                    font-size: 24px;
+                    letter-spacing: 5px;
+                }
+            }
+        }
+
+        .nav-contact{
+            div {
+                display: flex;
+                align-items: center;
+                i{
+                    color:$blue-color;
+                    margin-inline:5px
+                }
+            }
+        }
+    }
+}
