@@ -10,6 +10,13 @@
     font-family: font-bold;
     src: url("fonts/Ubuntu-Bold.ttf");
 }
+@font-face {
+    font-family: font-light;
+    src: url("fonts/Ubuntu-Light.ttf");
+}
+
+//// classes
+
 .container {
     @include container
 }
@@ -25,6 +32,8 @@ nav {
         padding-block: 20px 40px;
         display: flex;
         justify-content: space-between;
+        position: relative;
+        z-index: 9;
         .nav-logo{
             display: flex;
             align-items: center;
@@ -45,14 +54,110 @@ nav {
         }
 
         .nav-contact{
+            @include centering;
+            flex-wrap: wrap;
             div {
                 display: flex;
                 align-items: center;
+                width: 100%;
                 i{
                     color:$blue-color;
                     margin-inline:5px
                 }
             }
         }
+
+        .nav-bar {
+            position: absolute;
+            bottom:-35px;
+            @include inlineCenterByAbsolute;
+            @include container;
+            background-color: $blue-color ;
+            padding-block: 10px;
+            border-radius: 20px;
+            .nav-item {
+                @include centering;
+                width: 100%;
+                
+                ul {
+                @include centering;
+                    position: relative;
+                    width: 100%;
+                }
+                li{
+                    @include lists;
+                    padding: 10px 35px;
+                    font-weight: bold;
+                    font-size: 19px;
+                    color:white;
+                    transition: 0.4s all ease;
+                    border-radius: 35px;
+                    cursor: pointer;
+                    &:hover {
+                        @include btnHover;
+                    }
+                    &:last-child {
+                        background-color: white;
+                        padding: 10px 20px;
+                        border-radius: 20px;
+                        color:$red-color;
+                        position: absolute;
+                        right: 40px;
+                    }
+                }
+            }
+        }
     }
+
+
+}
+
+header {
+    z-index: 8;
+    background-image: url('images/home.jpg');
+    @include backgroundOptions;
+    height: 90vh;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 71% 100%, 0 61%);
+    .overlay {
+        @include overlay;
+        background-color: rgba($color: $red-color, $alpha: 0.6);
+        
+        .home-content {
+            height: 100%;
+            @include centering;
+            text-align: center;
+            color:white;
+            font-size: 65px;
+            .content {
+                .home-item {
+                    span {
+                        font-weight: bold;
+                        font-size: 70px;
+                    }
+                }
+
+                button {
+                    @include button(10px 25px,25px);
+                    background-color: $blue-color;
+                    font-size: 26px;
+                    transition: 0.4s all ease;
+
+                    &:hover {
+                        @include btnHover;
+                    }
+                    i {
+                        padding-inline: 5px 10px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+.home-traingle {
+    @include traingle(0, 40%, 70%, 50%);
+        background-color: $blue-color;
+        clip-path: polygon(0 0, 0% 100%, 100% 48%);
 }

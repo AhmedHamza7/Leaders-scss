@@ -6,6 +6,10 @@
   font-family: font-bold;
   src: url("fonts/Ubuntu-Bold.ttf");
 }
+@font-face {
+  font-family: font-light;
+  src: url("fonts/Ubuntu-Light.ttf");
+}
 .container {
   width: 80%;
   margin: auto;
@@ -22,6 +26,8 @@ nav .nav-header {
   padding-block: 20px 40px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  z-index: 9;
 }
 nav .nav-header .nav-logo {
   display: flex;
@@ -40,11 +46,128 @@ nav .nav-header .nav-logo .logo-text span {
   font-size: 24px;
   letter-spacing: 5px;
 }
+nav .nav-header .nav-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 nav .nav-header .nav-contact div {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 nav .nav-header .nav-contact div i {
   color: #0054BE;
   margin-inline: 5px;
+}
+nav .nav-header .nav-bar {
+  position: absolute;
+  bottom: -35px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  background-color: #0054BE;
+  padding-block: 10px;
+  border-radius: 20px;
+}
+nav .nav-header .nav-bar .nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+nav .nav-header .nav-bar .nav-item ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+nav .nav-header .nav-bar .nav-item li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 35px;
+  font-weight: bold;
+  font-size: 19px;
+  color: white;
+  transition: 0.4s all ease;
+  border-radius: 35px;
+  cursor: pointer;
+}
+nav .nav-header .nav-bar .nav-item li:hover {
+  background-color: white;
+  color: #D90048;
+}
+nav .nav-header .nav-bar .nav-item li:last-child {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #D90048;
+  position: absolute;
+  right: 40px;
+}
+
+header {
+  z-index: 8;
+  background-image: url("images/home.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 71% 100%, 0 61%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 71% 100%, 0 61%);
+}
+header .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(217, 0, 72, 0.6);
+}
+header .overlay .home-content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 65px;
+}
+header .overlay .home-content .content .home-item span {
+  font-weight: bold;
+  font-size: 70px;
+}
+header .overlay .home-content .content button {
+  padding: 10px 25px;
+  border: none;
+  color: white;
+  border-radius: 25px;
+  background-color: #0054BE;
+  font-size: 26px;
+  transition: 0.4s all ease;
+}
+header .overlay .home-content .content button:hover {
+  background-color: white;
+  color: #D90048;
+}
+header .overlay .home-content .content button i {
+  padding-inline: 5px 10px;
+}
+
+.home-traingle {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  height: 70%;
+  width: 50%;
+  background-color: #0054BE;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 48%);
+          clip-path: polygon(0 0, 0% 100%, 100% 48%);
 }/*# sourceMappingURL=main.css.map */

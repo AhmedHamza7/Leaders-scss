@@ -1,4 +1,61 @@
+@use 'colors' as *;
+
+
 @mixin container {
     width: 80%;
     margin:auto;
+}
+
+@mixin lists {
+    list-style-type: none;
+    display: inline-block;
+}
+
+@mixin centering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin overlay {
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+}
+
+@mixin backgroundOptions {
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+}
+
+@mixin inlineCenterByAbsolute {
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+}
+
+@mixin traingle($left, $top, $height, $width) {
+    position: absolute;
+    left:$left;
+    top:$top;
+    height: $height;
+    width:$width;
+}
+
+
+@mixin button($padding, $radius) {
+    padding: $padding;
+    border: none;
+    color:white;
+    border-radius: $radius;
+}
+
+@mixin btnHover {
+    background-color: white;
+    color:$red-color;
 }
