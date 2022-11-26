@@ -1,8 +1,8 @@
 @use 'colors' as *;
 
 
-@mixin container {
-    width: 80%;
+@mixin container($w) {
+    width: $w;
     margin:auto;
 }
 
@@ -58,4 +58,11 @@
 @mixin btnHover {
     background-color: white;
     color:$red-color;
+}
+
+@mixin circle($dimenshions, $bg) {
+    width:$dimenshions;
+    height: $dimenshions;
+    border-radius: 50%;
+    background-color: $bg;
 }

@@ -15,6 +15,47 @@
   margin: auto;
 }
 
+.title {
+  margin-block: 5rem;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 10px;
+}
+.title div {
+  position: absolute;
+  bottom: 0;
+  left: 47%;
+  transform: translateX(-47%);
+  width: 10%;
+  height: 3px;
+  background-color: #D90048;
+}
+.title div:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 115%;
+  width: 20%;
+  height: 3px;
+  background-color: #D90048;
+}
+.title div:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 150%;
+  width: 5%;
+  height: 3px;
+  background-color: #D90048;
+}
+
+.my-section {
+  margin-block: 5rem;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -170,4 +211,320 @@ header .overlay .home-content .content button i {
   background-color: #0054BE;
   -webkit-clip-path: polygon(0 0, 0% 100%, 100% 48%);
           clip-path: polygon(0 0, 0% 100%, 100% 48%);
+}
+
+.about .about-content .about-history {
+  width: 40%;
+  margin: auto;
+}
+.about .about-content .about-history .history-1 {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  background-color: rgb(228, 228, 228);
+  padding: 20px;
+  margin-block: 50px;
+  position: relative;
+}
+.about .about-content .about-history .history-1 .about-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .about-content .about-history .history-1:before {
+  font-weight: bold;
+  color: white;
+  font-size: 22px;
+  padding: 5px 10px;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  background-color: #0054BE;
+}
+.about .about-content .about-history .history-1:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #D90048;
+  transform: translate(15px, 15px);
+  z-index: -1;
+}
+.about .about-content .about-history .history-2 {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  background-color: rgb(228, 228, 228);
+  padding: 20px;
+  margin-block: 50px;
+  position: relative;
+}
+.about .about-content .about-history .history-2 .about-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .about-content .about-history .history-2:before {
+  font-weight: bold;
+  color: white;
+  font-size: 22px;
+  padding: 5px 10px;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  background-color: #0054BE;
+}
+.about .about-content .about-history .history-2:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #D90048;
+  transform: translate(15px, 15px);
+  z-index: -1;
+}
+.about .about-content .about-history .history-3 {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  background-color: rgb(228, 228, 228);
+  padding: 20px;
+  margin-block: 50px;
+  position: relative;
+}
+.about .about-content .about-history .history-3 .about-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .about-content .about-history .history-3:before {
+  font-weight: bold;
+  color: white;
+  font-size: 22px;
+  padding: 5px 10px;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  background-color: #0054BE;
+}
+.about .about-content .about-history .history-3:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #D90048;
+  transform: translate(15px, 15px);
+  z-index: -1;
+}
+.about .about-content .about-history .history-4 {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  background-color: rgb(228, 228, 228);
+  padding: 20px;
+  margin-block: 50px;
+  position: relative;
+}
+.about .about-content .about-history .history-4 .about-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .about-content .about-history .history-4:before {
+  font-weight: bold;
+  color: white;
+  font-size: 22px;
+  padding: 5px 10px;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  background-color: #0054BE;
+}
+.about .about-content .about-history .history-4:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #D90048;
+  transform: translate(15px, 15px);
+  z-index: -1;
+}
+.about .about-content .about-history .history-1:before {
+  content: "1997";
+}
+.about .about-content .about-history .history-2:before {
+  content: "2000";
+}
+.about .about-content .about-history .history-3:before {
+  content: "2008";
+}
+.about .about-content .about-history .history-4:before {
+  content: "2021";
+}
+.about .about-content .about-achieved {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 20px;
+  width: 80%;
+  margin: auto;
+  padding-block: 20px;
+  margin-top: 80px;
+  border-block: 4px solid black;
+}
+.about .about-content .about-achieved span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 140px;
+  font-weight: bold;
+  color: #0054BE;
+}
+.about .about-content .about-achieved p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.services .services-content {
+  width: 50%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-row-gap: 30px;
+}
+.services .services-content .service-1 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-column-gap: 20px;
+}
+.services .services-content .service-1 .bg-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #0054BE;
+}
+.services .services-content .service-1 .bg-icon i {
+  color: white;
+}
+.services .services-content .service-1 .service-text {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.services .services-content .service-2 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-column-gap: 20px;
+}
+.services .services-content .service-2 .bg-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #0054BE;
+}
+.services .services-content .service-2 .bg-icon i {
+  color: white;
+}
+.services .services-content .service-2 .service-text {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.services .services-content .service-3 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-column-gap: 20px;
+}
+.services .services-content .service-3 .bg-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #0054BE;
+}
+.services .services-content .service-3 .bg-icon i {
+  color: white;
+}
+.services .services-content .service-3 .service-text {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.services .services-content .service-4 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-column-gap: 20px;
+}
+.services .services-content .service-4 .bg-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #0054BE;
+}
+.services .services-content .service-4 .bg-icon i {
+  color: white;
+}
+.services .services-content .service-4 .service-text {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.services .services-content .service-5 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-column-gap: 20px;
+}
+.services .services-content .service-5 .bg-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #0054BE;
+}
+.services .services-content .service-5 .bg-icon i {
+  color: white;
+}
+.services .services-content .service-5 .service-text {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.services .services-content .service-6 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-column-gap: 20px;
+}
+.services .services-content .service-6 .bg-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #0054BE;
+}
+.services .services-content .service-6 .bg-icon i {
+  color: white;
+}
+.services .services-content .service-6 .service-text {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.services .services-content .service-2 .bg-icon, .services .services-content .service-3 .bg-icon, .services .services-content .service-6 .bg-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #D90048;
 }/*# sourceMappingURL=main.css.map */
