@@ -53,7 +53,7 @@
 }
 
 .my-section {
-  margin-block: 5rem;
+  padding-block: 4rem;
 }
 
 * {
@@ -383,19 +383,45 @@ header .overlay .home-content .content button i {
   line-height: 1.5;
 }
 
-.services .services-content {
+.services {
+  background-image: url("images/services.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  color: white;
+}
+.services .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 85, 190, 0.6705882353);
+}
+.services .overlay .services-content {
   width: 50%;
   margin: auto;
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-row-gap: 30px;
+  grid-template-columns: 49% 50%;
 }
-.services .services-content .service-1 {
+.services .overlay .services-content .service-1 {
   display: grid;
   grid-template-columns: 30% 70%;
   grid-column-gap: 20px;
+  padding: 15px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.6s all ease;
 }
-.services .services-content .service-1 .bg-icon {
+.services .overlay .services-content .service-1:hover {
+  background-color: white;
+  transform: scale(1.04, 1.04);
+  border-radius: 10px;
+  color: #0054BE;
+}
+.services .overlay .services-content .service-1 .bg-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -404,20 +430,30 @@ header .overlay .home-content .content button i {
   border-radius: 50%;
   background-color: #0054BE;
 }
-.services .services-content .service-1 .bg-icon i {
+.services .overlay .services-content .service-1 .bg-icon i {
   color: white;
 }
-.services .services-content .service-1 .service-text {
+.services .overlay .services-content .service-1 .service-text {
   display: flex;
   align-items: center;
   font-weight: bold;
 }
-.services .services-content .service-2 {
+.services .overlay .services-content .service-2 {
   display: grid;
   grid-template-columns: 30% 70%;
   grid-column-gap: 20px;
+  padding: 15px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.6s all ease;
 }
-.services .services-content .service-2 .bg-icon {
+.services .overlay .services-content .service-2:hover {
+  background-color: white;
+  transform: scale(1.04, 1.04);
+  border-radius: 10px;
+  color: #0054BE;
+}
+.services .overlay .services-content .service-2 .bg-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -426,20 +462,30 @@ header .overlay .home-content .content button i {
   border-radius: 50%;
   background-color: #0054BE;
 }
-.services .services-content .service-2 .bg-icon i {
+.services .overlay .services-content .service-2 .bg-icon i {
   color: white;
 }
-.services .services-content .service-2 .service-text {
+.services .overlay .services-content .service-2 .service-text {
   display: flex;
   align-items: center;
   font-weight: bold;
 }
-.services .services-content .service-3 {
+.services .overlay .services-content .service-3 {
   display: grid;
   grid-template-columns: 30% 70%;
   grid-column-gap: 20px;
+  padding: 15px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.6s all ease;
 }
-.services .services-content .service-3 .bg-icon {
+.services .overlay .services-content .service-3:hover {
+  background-color: white;
+  transform: scale(1.04, 1.04);
+  border-radius: 10px;
+  color: #0054BE;
+}
+.services .overlay .services-content .service-3 .bg-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -448,20 +494,30 @@ header .overlay .home-content .content button i {
   border-radius: 50%;
   background-color: #0054BE;
 }
-.services .services-content .service-3 .bg-icon i {
+.services .overlay .services-content .service-3 .bg-icon i {
   color: white;
 }
-.services .services-content .service-3 .service-text {
+.services .overlay .services-content .service-3 .service-text {
   display: flex;
   align-items: center;
   font-weight: bold;
 }
-.services .services-content .service-4 {
+.services .overlay .services-content .service-4 {
   display: grid;
   grid-template-columns: 30% 70%;
   grid-column-gap: 20px;
+  padding: 15px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.6s all ease;
 }
-.services .services-content .service-4 .bg-icon {
+.services .overlay .services-content .service-4:hover {
+  background-color: white;
+  transform: scale(1.04, 1.04);
+  border-radius: 10px;
+  color: #0054BE;
+}
+.services .overlay .services-content .service-4 .bg-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -470,20 +526,30 @@ header .overlay .home-content .content button i {
   border-radius: 50%;
   background-color: #0054BE;
 }
-.services .services-content .service-4 .bg-icon i {
+.services .overlay .services-content .service-4 .bg-icon i {
   color: white;
 }
-.services .services-content .service-4 .service-text {
+.services .overlay .services-content .service-4 .service-text {
   display: flex;
   align-items: center;
   font-weight: bold;
 }
-.services .services-content .service-5 {
+.services .overlay .services-content .service-5 {
   display: grid;
   grid-template-columns: 30% 70%;
   grid-column-gap: 20px;
+  padding: 15px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.6s all ease;
 }
-.services .services-content .service-5 .bg-icon {
+.services .overlay .services-content .service-5:hover {
+  background-color: white;
+  transform: scale(1.04, 1.04);
+  border-radius: 10px;
+  color: #0054BE;
+}
+.services .overlay .services-content .service-5 .bg-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -492,20 +558,30 @@ header .overlay .home-content .content button i {
   border-radius: 50%;
   background-color: #0054BE;
 }
-.services .services-content .service-5 .bg-icon i {
+.services .overlay .services-content .service-5 .bg-icon i {
   color: white;
 }
-.services .services-content .service-5 .service-text {
+.services .overlay .services-content .service-5 .service-text {
   display: flex;
   align-items: center;
   font-weight: bold;
 }
-.services .services-content .service-6 {
+.services .overlay .services-content .service-6 {
   display: grid;
   grid-template-columns: 30% 70%;
   grid-column-gap: 20px;
+  padding: 15px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.6s all ease;
 }
-.services .services-content .service-6 .bg-icon {
+.services .overlay .services-content .service-6:hover {
+  background-color: white;
+  transform: scale(1.04, 1.04);
+  border-radius: 10px;
+  color: #0054BE;
+}
+.services .overlay .services-content .service-6 .bg-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -514,17 +590,223 @@ header .overlay .home-content .content button i {
   border-radius: 50%;
   background-color: #0054BE;
 }
-.services .services-content .service-6 .bg-icon i {
+.services .overlay .services-content .service-6 .bg-icon i {
   color: white;
 }
-.services .services-content .service-6 .service-text {
+.services .overlay .services-content .service-6 .service-text {
   display: flex;
   align-items: center;
   font-weight: bold;
 }
-.services .services-content .service-2 .bg-icon, .services .services-content .service-3 .bg-icon, .services .services-content .service-6 .bg-icon {
+.services .overlay .services-content .service-2, .services .overlay .services-content .service-3, .services .overlay .services-content .service-6 {
+  border-left: 2px solid rgb(255, 255, 255);
+}
+.services .overlay .services-content .service-2 .bg-icon, .services .overlay .services-content .service-3 .bg-icon, .services .overlay .services-content .service-6 .bg-icon {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   background-color: #D90048;
+}
+
+.our-team .our-team-content {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 33.3333333333%);
+  grid-template-rows: 50% 50%;
+  grid-gap: 50px 25px;
+}
+.our-team .our-team-content .our-team-1 {
+  text-align: center;
+}
+.our-team .our-team-content .our-team-1 .our-team-image {
+  margin-bottom: 10px;
+}
+.our-team .our-team-content .our-team-1 .our-team-image img {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  padding: 10px;
+  transition: 0.3s all ease;
+}
+.our-team .our-team-content .our-team-1 .our-team-image img:hover {
+  border: 5px solid #D90048;
+}
+.our-team .our-team-content .our-team-2 {
+  text-align: center;
+}
+.our-team .our-team-content .our-team-2 .our-team-image {
+  margin-bottom: 10px;
+}
+.our-team .our-team-content .our-team-2 .our-team-image img {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  padding: 10px;
+  transition: 0.3s all ease;
+}
+.our-team .our-team-content .our-team-2 .our-team-image img:hover {
+  border: 5px solid #D90048;
+}
+.our-team .our-team-content .our-team-3 {
+  text-align: center;
+}
+.our-team .our-team-content .our-team-3 .our-team-image {
+  margin-bottom: 10px;
+}
+.our-team .our-team-content .our-team-3 .our-team-image img {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  padding: 10px;
+  transition: 0.3s all ease;
+}
+.our-team .our-team-content .our-team-3 .our-team-image img:hover {
+  border: 5px solid #D90048;
+}
+.our-team .our-team-content .our-team-4 {
+  text-align: center;
+}
+.our-team .our-team-content .our-team-4 .our-team-image {
+  margin-bottom: 10px;
+}
+.our-team .our-team-content .our-team-4 .our-team-image img {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  padding: 10px;
+  transition: 0.3s all ease;
+}
+.our-team .our-team-content .our-team-4 .our-team-image img:hover {
+  border: 5px solid #D90048;
+}
+.our-team .our-team-content .our-team-5 {
+  text-align: center;
+}
+.our-team .our-team-content .our-team-5 .our-team-image {
+  margin-bottom: 10px;
+}
+.our-team .our-team-content .our-team-5 .our-team-image img {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  padding: 10px;
+  transition: 0.3s all ease;
+}
+.our-team .our-team-content .our-team-5 .our-team-image img:hover {
+  border: 5px solid #D90048;
+}
+.our-team .our-team-content .our-team-6 {
+  text-align: center;
+}
+.our-team .our-team-content .our-team-6 .our-team-image {
+  margin-bottom: 10px;
+}
+.our-team .our-team-content .our-team-6 .our-team-image img {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  padding: 10px;
+  transition: 0.3s all ease;
+}
+.our-team .our-team-content .our-team-6 .our-team-image img:hover {
+  border: 5px solid #D90048;
+}
+
+.contact {
+  background-color: rgb(228, 228, 228);
+  position: relative;
+}
+.contact .contact-content {
+  width: 30%;
+  margin: auto;
+}
+.contact .contact-content .input {
+  margin-bottom: 20px;
+}
+.contact .contact-content .input input {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+.contact .contact-content .text-area textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+.contact .contact-content .send-message {
+  text-align: center;
+  margin-top: 20px;
+}
+.contact .contact-content .send-message button {
+  padding: 15px 30px;
+  border: none;
+  font-size: 18px;
+  border-radius: 30px;
+  color: white;
+  background-image: linear-gradient(to right, #0054BE, #D90048);
+  transition: 0.4s all ease;
+  cursor: pointer;
+}
+.contact .contact-content .send-message button:hover {
+  padding: 15px 40px;
+}
+.contact .contact-traingle-1 {
+  position: absolute;
+  left: auto;
+  top: auto;
+  height: 60%;
+  width: 40%;
+  bottom: 0;
+  background-color: #0054BE;
+  -webkit-clip-path: polygon(0 4%, 0% 100%, 100% 100%);
+          clip-path: polygon(0 4%, 0% 100%, 100% 100%);
+}
+.contact .contact-traingle-1 .traingle-1-content {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.7;
+}
+.contact .contact-traingle-2 {
+  position: absolute;
+  left: auto;
+  top: auto;
+  height: 60%;
+  width: 40%;
+  bottom: 0;
+  right: 0;
+  background-color: #D90048;
+  -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+          clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+.contact .contact-traingle-2 .traingle-2-content {
+  position: absolute;
+  top: 60%;
+  right: 15%;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.7;
+}
+
+footer {
+  background-color: white;
+  padding-block: 20px;
+}
+footer .footer-content {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */

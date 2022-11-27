@@ -58,7 +58,7 @@
 }
 
 .my-section{
-    margin-block:5rem;
+    padding-block:4rem;
 }
 * {
     padding: 0;
@@ -210,7 +210,7 @@ header {
                 .history-#{$i} {
                     display: grid;
                     grid-template-columns: 20% 80%;
-                    background-color: rgb(228, 228, 228);
+                    background-color: $grey-color;
                     padding: 20px;
                     margin-block:50px ;
                     position:relative;
@@ -289,36 +289,168 @@ header {
 }
 
 .services {
-    .services-content {
-        @include container(50%);
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-row-gap: 30px;
-        @for $i from 1 through 6 {
-            .service-#{$i}{
-                display: grid;
-                grid-template-columns: 30% 70%;
-                grid-column-gap: 20px;
+    background-image: url('images/services.jpg');
+    @include backgroundOptions;
+    position: relative;
+    height: 100vh;
+    color:white;
+    .overlay{
+        @include overlay;
+        background-color: #0055beab;
 
-                .bg-icon{
-                    @include centering;
-                    @include circle(100px, $blue-color);
-                    i{
-                        color:white;
+        .services-content {
+            @include container(50%);
+            display: grid;
+            grid-template-columns: 49% 50%;
+            @for $i from 1 through 6 {
+                .service-#{$i}{
+                    display: grid;
+                    grid-template-columns: 30% 70%;
+                    grid-column-gap: 20px;
+                    padding: 15px;
+                    border-bottom: 2px solid rgb(255, 255, 255);
+                    cursor: pointer;
+                    transition: 0.6s all ease;
+
+                    &:hover{
+                        background-color: white;
+                        transform: scale(1.04, 1.04);
+                        border-radius: 10px;
+                        color: $blue-color
+                    }
+                    .bg-icon{
+                        @include centering;
+                        @include circleIcon(100px, $blue-color);
+                        i{
+                            color:white;
+                        }
+                    }
+                    .service-text {
+                        display: flex;
+                        align-items: center;
+                        font-weight: bold;
                     }
                 }
+            }
+            .service-2 , .service-3, .service-6{
+                border-left: 2px solid rgb(255, 255, 255);
+                .bg-icon{
+                    @include circleIcon(100px, $red-color);
+                }
+        }
+    }
+    }
+    }
 
-                .service-text {
-                    display: flex;
-                    align-items: center;
-                    font-weight: bold;
+
+.our-team{
+    .our-team-content{
+        @include container(80%);
+        display: grid;
+        grid-template-columns: repeat(3 , calc(100% / 3));
+        grid-template-rows: 50% 50%;
+        grid-gap: 50px 25px;
+        @for $i from 1 through 6 {
+            .our-team-#{$i}{
+                text-align: center;
+                .our-team-image{
+                    margin-bottom:10px;
+                    img{
+                        @include circle(80%);
+                        padding: 10px;
+                        transition: 0.3s all ease;
+                         &:hover{
+                            border: 5px solid $red-color;
+                         }
+                    }
+                }
+            }
+        }
+    }
+    }
+
+
+.contact{
+    background-color: $grey-color;
+    position: relative;
+    .contact-content{
+        @include container(30%);
+        .input{
+            margin-bottom: 20px;
+            input{
+                @include inputStyle;
+            }
+        }
+
+        .text-area{
+            textarea{
+                @include inputStyle;
+            }
+        }
+
+        .send-message {
+            text-align: center;
+            margin-top: 20px;
+            button {
+                padding: 15px 30px;
+                border: none;
+                font-size: 18px;
+                border-radius: 30px;
+                color:white;
+                background-image: linear-gradient(to right, $blue-color, $red-color);
+                transition: 0.4s all ease;
+                cursor: pointer;
+                &:hover{
+                padding: 15px 40px;
+                    
                 }
             }
         }
 
-        .service-2 , .service-3, .service-6{
-            .bg-icon{
-                @include circle(100px, $red-color);
-            }
+        
+}
+.contact-traingle-1 {
+    @include traingle(auto, auto, 60%, 40%);
+        bottom: 0;
+        background-color: $blue-color;
+        clip-path: polygon(0 4%, 0% 100%, 100% 100%);
+
+        .traingle-1-content {
+            position: absolute;
+            top:50%;
+            left: 15%;
+            color:white;
+            text-align: center;
+            font-size: 24px;
+            line-height: 1.7;
+        }
+}
+.contact-traingle-2 {
+    @include traingle(auto, auto, 60%, 40%);
+        bottom: 0;
+        right:0;
+        background-color: $red-color;
+        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+        .traingle-2-content {
+            position: absolute;
+            top:60%;
+            right: 15%;
+            color:white;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 1.7;
+        }
+}
+}
+
+footer {
+    background-color: white;
+   
+    padding-block: 20px;
+    .footer-content {
+        @include container(80%);
+        display: flex;
+        justify-content: space-between;
     }
-}}
+}
