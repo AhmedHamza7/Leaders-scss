@@ -11,12 +11,6 @@
     display: inline-block;
 }
 
-@mixin centering {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 @mixin overlay {
     position: absolute;
     left: 0;
@@ -31,34 +25,32 @@
     background-repeat: no-repeat;
 }
 
+@mixin inputStyle {
+        width: 100%;
+        outline: none;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-size: 20px;
+}
+
+/*     C  E  N  T  E  R     */
+
+@mixin centering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @mixin inlineCenterByAbsolute {
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
-        text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
-@mixin traingle($left, $top, $height, $width) {
-    position: absolute;
-    left:$left;
-    top:$top;
-    height: $height;
-    width:$width;
-}
-
-
-@mixin button($padding, $radius) {
-    padding: $padding;
-    border: none;
-    color:white;
-    border-radius: $radius;
-}
-
-@mixin btnHover {
-    background-color: white;
-    color:$red-color;
-}
+/*        S  H  A  P  E  S      */
 
 @mixin circleIcon($dimenshions, $bg) {
     width:$dimenshions;
@@ -73,11 +65,26 @@
     border-radius: 50%;
 }
 
-@mixin inputStyle {
-    width: 100%;
-                outline: none;
-                border: none;
-                padding: 10px 20px;
-                border-radius: 20px;
-                font-size: 20px;
+@mixin traingle($left, $top, $height, $width) {
+    position: absolute;
+    left:$left;
+    top:$top;
+    height: $height;
+    width:$width;
+}
+
+
+
+/*    B  U  T  T  O  N  S    */
+
+@mixin button($padding, $radius) {
+    padding: $padding;
+    border: none;
+    color:white;
+    border-radius: $radius;
+}
+
+@mixin btnHover {
+    background-color: white;
+    color:$red-color;
 }

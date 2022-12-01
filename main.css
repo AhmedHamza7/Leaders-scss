@@ -1,3 +1,6 @@
+/*     C  E  N  T  E  R     */
+/*        S  H  A  P  E  S      */
+/*    B  U  T  T  O  N  S    */
 @font-face {
   font-family: font-regular;
   src: url("fonts/Ubuntu-Regular.ttf");
@@ -642,7 +645,7 @@ header .overlay .home-content .content button i {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   color: white;
 }
 .services .overlay {
@@ -861,6 +864,9 @@ header .overlay .home-content .content button i {
   background-color: #D90048;
 }
 @media (max-width: 1200px) {
+  .services .overlay {
+    min-height: 100%;
+  }
   .services .overlay .services-content {
     width: 85%;
     margin: auto;
@@ -964,18 +970,23 @@ header .overlay .home-content .content button i {
   }
 }
 @media (max-width: 768px) {
+  .services {
+    min-height: 130vh;
+  }
+  .services .overlay {
+    min-height: 100%;
+  }
   .services .overlay .services-title .title {
     margin-block: 2rem;
   }
   .services .overlay .services-content {
     width: 90%;
     margin: auto;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(6, auto);
+    display: flex;
+    flex-wrap: wrap;
   }
   .services .overlay .services-content .service-1 {
-    grid-template-columns: 20% 80%;
-    grid-column-gap: 20px;
+    display: flex;
     padding: 10px;
   }
   .services .overlay .services-content .service-1 .bg-icon {
@@ -987,9 +998,11 @@ header .overlay .home-content .content button i {
   .services .overlay .services-content .service-1 .bg-icon i {
     font-size: 26px;
   }
+  .services .overlay .services-content .service-1 .service-text {
+    font-size: 18px;
+  }
   .services .overlay .services-content .service-2 {
-    grid-template-columns: 20% 80%;
-    grid-column-gap: 20px;
+    display: flex;
     padding: 10px;
   }
   .services .overlay .services-content .service-2 .bg-icon {
@@ -1001,9 +1014,11 @@ header .overlay .home-content .content button i {
   .services .overlay .services-content .service-2 .bg-icon i {
     font-size: 26px;
   }
+  .services .overlay .services-content .service-2 .service-text {
+    font-size: 18px;
+  }
   .services .overlay .services-content .service-3 {
-    grid-template-columns: 20% 80%;
-    grid-column-gap: 20px;
+    display: flex;
     padding: 10px;
   }
   .services .overlay .services-content .service-3 .bg-icon {
@@ -1015,9 +1030,11 @@ header .overlay .home-content .content button i {
   .services .overlay .services-content .service-3 .bg-icon i {
     font-size: 26px;
   }
+  .services .overlay .services-content .service-3 .service-text {
+    font-size: 18px;
+  }
   .services .overlay .services-content .service-4 {
-    grid-template-columns: 20% 80%;
-    grid-column-gap: 20px;
+    display: flex;
     padding: 10px;
   }
   .services .overlay .services-content .service-4 .bg-icon {
@@ -1029,9 +1046,11 @@ header .overlay .home-content .content button i {
   .services .overlay .services-content .service-4 .bg-icon i {
     font-size: 26px;
   }
+  .services .overlay .services-content .service-4 .service-text {
+    font-size: 18px;
+  }
   .services .overlay .services-content .service-5 {
-    grid-template-columns: 20% 80%;
-    grid-column-gap: 20px;
+    display: flex;
     padding: 10px;
   }
   .services .overlay .services-content .service-5 .bg-icon {
@@ -1043,9 +1062,11 @@ header .overlay .home-content .content button i {
   .services .overlay .services-content .service-5 .bg-icon i {
     font-size: 26px;
   }
+  .services .overlay .services-content .service-5 .service-text {
+    font-size: 18px;
+  }
   .services .overlay .services-content .service-6 {
-    grid-template-columns: 20% 80%;
-    grid-column-gap: 20px;
+    display: flex;
     padding: 10px;
   }
   .services .overlay .services-content .service-6 .bg-icon {
@@ -1056,6 +1077,9 @@ header .overlay .home-content .content button i {
   }
   .services .overlay .services-content .service-6 .bg-icon i {
     font-size: 26px;
+  }
+  .services .overlay .services-content .service-6 .service-text {
+    font-size: 18px;
   }
   .services .overlay .services-content .service-2, .services .overlay .services-content .service-4, .services .overlay .services-content .service-6 {
     border-left: none;
@@ -1538,7 +1562,7 @@ header .overlay .home-content .content button i {
   }
   .contact .contact-traingle-1 .traingle-1-content {
     top: 30%;
-    left: 10%;
+    left: 7%;
     text-align: start;
     font-size: 15px;
   }
@@ -1550,7 +1574,7 @@ header .overlay .home-content .content button i {
     width: 45%;
   }
   .contact .contact-traingle-2 .traingle-2-content {
-    top: 50%;
+    top: 60%;
     right: 2%;
     font-size: 12px;
     line-height: 1.3;

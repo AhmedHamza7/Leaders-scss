@@ -582,7 +582,7 @@ header {
     background-image: url('images/services.jpg');
     @include backgroundOptions;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     color:white;
     
     .overlay{
@@ -633,7 +633,10 @@ header {
     }
     @media (max-width:1200px){
         .overlay{
+        min-height:100% ;
+
             .services-content {
+                
                 @include container(85%);
                 grid-column-gap: 40px;
                 @for $i from 1 through 6 {
@@ -664,7 +667,9 @@ header {
     }
 
     @media (max-width:768px){
+        min-height:130vh ;
         .overlay{
+        min-height:100% ;
             .services-title {
                 .title {
                 margin-block:2rem;
@@ -672,12 +677,12 @@ header {
             }
             .services-content {
                 @include container(90%);
-                grid-template-columns: 100%;
-                grid-template-rows: repeat(6, auto);
+                display: flex;
+                flex-wrap: wrap;
                 @for $i from 1 through 6 {
                     .service-#{$i}{
-                        grid-template-columns: 20% 80%;
-                        grid-column-gap: 20px;
+                        display: flex;
+
                         padding: 10px;
                         
                         .bg-icon{
@@ -685,6 +690,9 @@ header {
                             i{
                                 font-size: 26px;
                             }
+                        }
+                        .service-text{
+                            font-size: 18px;
                         }
                         
                     }
@@ -932,7 +940,7 @@ header {
     @include traingle(auto, auto, 25%, 45%);
         .traingle-1-content {
             top:30%;
-            left: 10%;
+            left: 7%;
             text-align: start;
             font-size: 15px;
         }
@@ -940,7 +948,7 @@ header {
 .contact-traingle-2 {
     @include traingle(auto, auto, 20%, 45%);
         .traingle-2-content {
-            top:50%;
+            top:60%;
             right: 2%;
             font-size: 12px;
             line-height: 1.3;
