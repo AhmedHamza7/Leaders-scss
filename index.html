@@ -10,17 +10,21 @@
 </head>
 <body>
         <nav>
+            <input type="checkbox" id="check">
+                        <label for="check" class="checkbtn">
+                            <i class="fas fa-bars"></i>
+                        </label>
             <div class="container">
-            <div class="nav-header">
-                <div class="nav-logo">
+                <div class="nav-header">
+                    <div class="nav-logo">
                     <img src="images/leader.png" alt="">
                     <div class="logo-text">
                             FUTURE
                          <br> <span>LEADERS</span>
                     </div>
-                </div>
+                    </div>
 
-                <div class="nav-contact">
+                    <div class="nav-contact">
                     <div>
                         <i class="fa-regular fa-address-book"></i>
                         <p>contact@website.com</p>
@@ -30,25 +34,40 @@
                         <i class="fa-solid fa-phone-volume"></i>
                         <p>555-332-545215</p>
                     </div>
-                </div>
+                    </div>
 
-                <div class="nav-bar">
+                    <div class="nav-bar">
+                    
                     <div class="nav-item">
+                        
                         <ul>
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Services</li>
-                            <li>Our Team</li>
-                            <li>Contact</li>
+                            <li>
+                                <a href="#home">Home</a>
+                            </li>
+                            <li>    
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#services">Services</a>
+                            </li>
+                            <li>
+                                <a href="#our-team">Our Team</a>
+                            </li>
+                            <li>
+                                <a href="#contact" id="last-child">Contact</a>
+                            </li>
                         </ul>
                     </div>
+
+                    
+                    </div>
                 </div>
-            </div>
 
             
             </div>
         </nav>
-    <header>
+
+    <header id="home">
         <div class="overlay">
             <div class="home-content">
                 <div class="content">
@@ -65,7 +84,7 @@
 
     </div>
 
-    <section class="about my-section">
+    <section class="about my-section" id="about">
         <div class="about-title">
             <div class="title">
                 <h2>ABOUT</h2>
@@ -121,7 +140,7 @@
     </section>
 
 
-    <section class="services my-section">
+    <section class="services my-section" id="services">
         <div class="overlay">
             <div class="services-title">
                 <div class="title">
@@ -207,7 +226,7 @@
         </div>
     </section>
 
-    <section class="our-team my-section">
+    <section class="our-team my-section" id="our-team">
         <div class="our-team-title">
             <div class="title">
                 <h2>OUR TEAM</h2>
@@ -284,7 +303,7 @@
         </div>
     </section>
 
-    <section class="contact my-section">
+    <section class="contact my-section" id="contact">
         <div class="contact-title">
             <div class="title">
                 <h2>CONTACT</h2>
